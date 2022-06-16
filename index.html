@@ -59,7 +59,13 @@
               greatest technologies to prepare them for their photographer
               career.
             </p>
-            <button class="btn btn-primary btn-lg">Enroll</button>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Enroll
+            </button>
           </div>
           <img
             class="img-fluid w-50 d-none d-sm-block"
@@ -431,42 +437,115 @@
     </section>
 
     <section id="contacts" class="p-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md">
-                    <h3 class="text-center mb-4">Contact Us</h3>
-                    <ul class="list-group list-group-flush lead">
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main location:</span> Ul. Św. Filipa 23/1,  31-150 Kraków
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Working hours:</span> Monday - Saturday, 9.00 - 17.00
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Enrollment phone:</span> + 48 12 444-44-44
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Enrollment email:</span> stukalo_olga_r@yahoo.com
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md">
-                    <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9889546387967!2d19.942401300000004!3d50.0677685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b05347f7a37%3A0x5862fbf664e51208!2zxZp3acSZdGVnbyBGaWxpcGEgMjMsIDMxLTE1MCBLcmFrw7N3LCDQn9C-0LvRjNGI0LA!5e0!3m2!1sru!2slt!4v1655416387876!5m2!1sru!2slt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h3 class="text-center mb-4">Contact Us</h3>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main location:</span> Ul. Św. Filipa 23/1,
+                31-150 Kraków
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Working hours:</span> Monday - Saturday,
+                9.00 - 17.00
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment phone:</span> + 48 12 444-44-44
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment email:</span>
+                stukalo_olga_r@yahoo.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9889546387967!2d19.942401300000004!3d50.0677685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b05347f7a37%3A0x5862fbf664e51208!2zxZp3acSZdGVnbyBGaWxpcGEgMjMsIDMxLTE1MCBLcmFrw7N3LCDQn9C-0LvRjNGI0LA!5e0!3m2!1sru!2slt!4v1655416387876!5m2!1sru!2slt"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="p-5 bg-dark text-center text-white position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; 2022 Photography Bootcamp</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
-        </div>
+      <div class="container">
+        <p class="lead">Copyright &copy; 2022 Photography Bootcamp</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
     </footer>
+
+    <!-- Modal window -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">
+              Enrollment to Photography Bootcamp
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">
+              Please fill this form & we will get in contact with you
+            </p>
+            <form>
+              <div class="mb-1">
+                <label for="first-name" class="col-form-label"
+                  >First name</label
+                >
+                <input id="first-name" type="text" class="form-control" />
+              </div>
+              <div class="mb-1">
+                <label for="last-name" class="col-form-label">Last name</label>
+                <input id="last-name" type="text" class="form-control" />
+              </div>
+              <div class="mb-1">
+                <label for="phone-number" class="col-form-label"
+                  >Phone number</label
+                >
+                <input id="phone-number" type="tel" class="form-control" />
+              </div>
+              <div class="mb-1">
+                <label for="email" class="col-form-label">Email</label>
+                <input id="email" type="email" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
