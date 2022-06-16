@@ -1,141 +1,342 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Photography Bootcamp</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-        <div class="container">
-            <a href="#" class="navbar-brand">Photography Bootcamp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navmenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#education-program" class="nav-link">What You'll Learn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#faq" class="nav-link">Questions & Answers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#instructors" class="nav-link">Instructors</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">Photography Bootcamp</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navmenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#education-program" class="nav-link"
+                >What You'll Learn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#faq" class="nav-link">Questions & Answers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <section id="hero" class="bg-dark text-light p-5 p-lg-3 text-center text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1>Become a <span class="text-warning">Photographer</span></h1>
-                    <p class="lead my-4"> I focus on teaching my students the fundamentals of the latest and greatest technologies 
-                    to prepare them for their photographer career.</p>
-                    <button class="btn btn-primary btn-lg">Enroll</button>
-                </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="images/camera.svg" alt="Become a photographer">
-            </div>
+    <section
+      id="hero"
+      class="bg-dark text-light p-5 p-lg-3 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Become a <span class="text-warning">Photographer</span></h1>
+            <p class="lead my-4">
+              I focus on teaching my students the fundamentals of the latest and
+              greatest technologies to prepare them for their photographer
+              career.
+            </p>
+            <button class="btn btn-primary btn-lg">Enroll</button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="images/camera.svg"
+            alt="Become a photographer"
+          />
         </div>
+      </div>
     </section>
 
     <section id="newsletter" class="bg-primary text-light p-5">
-        <div class="container">
-            <div class="d-md-flex align-items-center justify-content-between">
-                <h3 class="mb-3 mb-md-0">Sign up for my newsletter</h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="Enter your email" aria-label="User's email" aria-describedby="button-addon2">
-                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Subscribe</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+          <h3 class="mb-3 mb-md-0">Sign up for my newsletter</h3>
+          <div class="input-group news-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your email"
+              aria-label="User's email"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-dark btn-lg"
+              type="button"
+              id="button-addon2"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="learning-formats" class="p-5">
-        <div class="container">
-            <div class="row text-center g-3">
-                <div class="col-md">
-                    <div class="card bg-dark text-light px-3 py-4">
-                        <div class="h2 mb-3">
-                            <i class="bi bi-laptop"></i>
-                        </div>
-                        <h3 class="card-title mb-3">Online learning</h3>
-                        <p class="card-text mb-3">You can learn online from any place of planet at your preferable time. All you need is laptop, a cup of coffee <br> & strong will to reach your goal.</p>
-                        <a href="#" class="btn btn-primary">Read more</a>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-secondary text-light px-3 py-4">
-                        <div class="h2 mb-3">
-                            <i class="bi bi-person-square"></i>
-                        </div>
-                        <h3 class="card-title mb-3">Hybrid learning</h3>
-                        <p class="card-text mb-3">Afraid to get stuck when online learning? Choose this format to have possibility to ask all the questions you have to experienced professional.</p>
-                        <a href="#" class="btn btn-dark">Read more</a>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light px-3 py-4">
-                        <div class="h2 mb-3">
-                            <i class="bi bi-people"></i>
-                        </div>
-                        <h3 class="card-title mb-3">1-on-1 live mentorship</h3>
-                        <p class="card-text mb-3">The most perfect way to master some skills is to have a high-skilled mentor that will guide you through thorny path of becoming a professional.</p>
-                        <a href="#" class="btn btn-primary">Read more</a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row text-center g-3">
+          <div class="col-md">
+            <div class="card bg-dark text-light px-3 py-4">
+              <div class="h2 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">Online learning</h3>
+              <p class="card-text mb-3">
+                You can learn online from any place of planet at your preferable
+                time. All you need is laptop, a cup of coffee <br />
+                & strong will to reach your goal.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light px-3 py-4">
+              <div class="h2 mb-3">
+                <i class="bi bi-person-square"></i>
+              </div>
+              <h3 class="card-title mb-3">Hybrid learning</h3>
+              <p class="card-text mb-3">
+                Afraid to get stuck when online learning? Choose this format to
+                have possibility to ask all the questions you have to
+                experienced professional.
+              </p>
+              <a href="#" class="btn btn-dark">Read more</a>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light px-3 py-4">
+              <div class="h2 mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="card-title mb-3">1-on-1 live mentorship</h3>
+              <p class="card-text mb-3">
+                The most perfect way to master some skills is to have a
+                high-skilled mentor that will guide you through thorny path of
+                becoming a professional.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="education-program" class="p-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="images/fashion_photoshoot.svg" class="img-fluid w-50 d-none d-sm-block" alt="Fundamentals of photography">
-                </div>
-                <div class="col-md p-5">
-                    <h3 class="mb-4">Learn the fundamentals of photography</h3>
-                    <p class="lead mb-3">Are you a beginner in photography? Then you should start from learning some core fundamentals.</p>
-                    <p>What are basic camera settings & how do they influence on the quality of photoshoot? 
-                    Where to get inspiration to be successful? How to deal with social media to have more clients? 
-                    How to prepare to photoshoot? How to work with client to make him feel comfortable with you during
-                    photoshoot? How to get high-quality picture after retouching? All these questions will be
-                    discussed during work at my photography bootcamp. Don't waste your time to make mistakes.
-                    Take my ready-to-use solutions.</p>
-                    <a href="#" class="btn btn-secondary mt-3">
-                        <i class="bi bi-chevron-right"></i> Read more
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="images/fashion_photoshoot.svg"
+              class="img-fluid w-50 d-none d-sm-block"
+              alt="Fundamentals of photography"
+            />
+          </div>
+          <div class="col-md p-5">
+            <h3 class="mb-4">Learn the fundamentals of photography</h3>
+            <p class="lead mb-3">
+              Are you a beginner in photography? Then you should start from
+              learning some core fundamentals.
+            </p>
+            <p>
+              What are basic camera settings & how do they influence on the
+              quality of photoshoot? Where to get inspiration to be successful?
+              How to deal with social media to have more clients? How to prepare
+              to photoshoot? How to work with client to make him feel
+              comfortable with you during photoshoot? How to get high-quality
+              picture after retouching? All these questions will be discussed
+              during work at my photography bootcamp. Don't waste your time to
+              make mistakes. Take my ready-to-use solutions.
+            </p>
+            <a href="#" class="btn btn-secondary mt-3">
+              <i class="bi bi-chevron-right"></i> Read more
+            </a>
+          </div>
         </div>
-    </section>    
-
-    <section id="product-photography" class="bg-dark p-5 text-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <h3 class="mb-4">Learn product photography</h3>
-                    <p class="lead mb-3">You think only people need to have beautiful photos? No. 
-                    Commercial product photography is a huge fast-growing niche.</p>
-                    <p>The visual appearance of products is a key deciding factor for 93% of consumers. If customers can understand and envision the products you sell, they’ll feel more comfortable giving you their money. During this educational program I'll show you all my hints & tricks to get cool product photos.</p>
-                    <a href="#" class="btn btn-secondary mt-3">
-                        <i class="bi bi-chevron-right"></i> Read more
-                    </a>
-                </div>
-                <div class="col-md">
-                    <img src="images/product_photography.svg" class="img-fluid w-50 d-none d-sm-block" alt="Product photography">
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <section id="product-photography" class="bg-dark p-5 text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h3 class="mb-4">Learn product photography</h3>
+            <p class="lead mb-3">
+              You think only people need to have beautiful photos? No.
+              Commercial product photography is a huge fast-growing niche.
+            </p>
+            <p>
+              The visual appearance of products is a key deciding factor for 93%
+              of consumers. If customers can understand and envision the
+              products you sell, they’ll feel more comfortable giving you their
+              money. During this educational program I'll show you all my hints
+              & tricks to get cool product photos.
+            </p>
+            <a href="#" class="btn btn-secondary mt-3">
+              <i class="bi bi-chevron-right"></i> Read more
+            </a>
+          </div>
+          <div class="col-md">
+            <img
+              src="images/product_photography.svg"
+              class="img-fluid w-50 d-none d-sm-block"
+              alt="Product photography"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="p-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-1"
+              >
+                Where are you located?
+              </button>
+            </h3>
+            <div
+              id="question-1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                I'm located in Krakow, Poland. If you choose 1-on-1 live
+                mentorship education program or hybrid learning we'll meet in
+                coworking in Old Town.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-2"
+              >
+                What's the price for Photography Fundamentals education program?
+              </button>
+            </h3>
+            <div
+              id="question-2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                The price depends on chosen format: online learning costs $400,
+                live 1-on-1 mentorship - $800, hybrid learning - $600.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-3"
+              >
+                What's the price for Product Photography education program?
+              </button>
+            </h3>
+            <div
+              id="question-3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                The price depends on chosen format: online learning costs $200,
+                live 1-on-1 mentorship - $350, hybrid learning - $500.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-4"
+              >
+                What options for payment for education do you provide?
+              </button>
+            </h3>
+            <div
+              id="question-4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                You can pay in cash or with credit card.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-5"
+              >
+                Do you provide any money-back guarantee for your education
+                programs?
+              </button>
+            </h3>
+            <div
+              id="question-5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Moneyback guarantee is been given only for live 1-on-1
+                mentorship format. You can pay for every single class during
+                first 3 classes. If you will not be satisfied with a class I'll
+                return you 100 % of payment for it.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
